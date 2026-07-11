@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #1a365d;
+    --secondary-color: #2b6cb0;
+    --accent-color: #e2e8f0;
+    --completed-color: #c6f6d5;
+    --completed-text: #22543d;
+    --incomplete-color: #feebc8;
+    --incomplete-text: #744210;
+    --text-color: #2d3748;
+    --bg-color: #fff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer, section {
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "No";
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    background-color: var(--secondary-color);
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation li a {
+    display: block;
+    padding: 0.75rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.navigation li a:hover {
+    background-color: var(--primary-color);
+}
+
+.navigation li a.active {
+    background-color: rgba(0,0,0,0.3);
+    font-weight: bold;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#course-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.course-badge {
+    padding: 0.75rem;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.course-badge.completed {
+    background-color: var(--completed-color);
+    color: var(--completed-text);
+}
+
+.course-badge.incomplete {
+    background-color: var(--incomplete-color);
+    color: var(--incomplete-text);
+}
+
+.filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
