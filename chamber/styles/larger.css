@@ -1,0 +1,94 @@
+#menu-toggle {
+    display: none; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+#primary-nav {
+    display: block;
+    margin-top: 0;
+}
+
+#primary-nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#primary-nav li a {
+    border-bottom: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.directory-title-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-controls button {
+    padding: 0.5rem 1rem;
+    flex: none;
+}
+
+#directory-display.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+#directory-display.grid-layout section {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#directory-display.grid-layout .contact-details {
+    margin-top: auto;
+}
+
+#directory-display.list-layout section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#directory-display.list-layout h3 {
+    margin: 0;
+}
+
+#directory-display.list-layout .contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+#directory-display.list-layout .tier-tag {
+    margin-top: 0;
+    justify-self: end;
+    width: max-content;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.footer-branding {
+    margin-bottom: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.footer-compliance {
+    text-align: right;
+}

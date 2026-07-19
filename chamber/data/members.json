@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Alpha Tech Solutions",
+    "address": "404 Innovation Way",
+    "phone": "(555) 019-2831",
+    "website": "https://alphatech.example.com",
+    "image": "alpha-tech.png",
+    "membershipLevel": 3,
+    "tagline": "Innovative software and network operations."
+  },
+  {
+    "name": "Green Garden Cafe",
+    "address": "12 Organic Lane",
+    "phone": "(555) 014-5589",
+    "website": "https://greengardencafe.example.com",
+    "image": "green-garden.png",
+    "membershipLevel": 1,
+    "tagline": "Freshly sourced local ingredients every day."
+  },
+  {
+    "name": "Apex Manufacturing",
+    "address": "78 Industrial Pkwy",
+    "phone": "(555) 012-9900",
+    "website": "https://apexmanufacturing.example.com",
+    "image": "apex-mfg.png",
+    "membershipLevel": 2,
+    "tagline": "Precision components built to endure."
+  },
+  {
+    "name": "Beacon Legal Group",
+    "address": "900 Court St, Suite 4A",
+    "phone": "(555) 015-1122",
+    "website": "https://beaconlegal.example.com",
+    "image": "beacon-legal.png",
+    "membershipLevel": 3,
+    "tagline": "Navigating compliance and business law successfully."
+  },
+  {
+    "name": "Horizon Real Estate",
+    "address": "55 Skyline Blvd",
+    "phone": "(555) 017-4433",
+    "website": "https://horizonrealestate.example.com",
+    "image": "horizon-re.png",
+    "membershipLevel": 2,
+    "tagline": "Finding your perfect commercial or residential home."
+  },
+  {
+    "name": "Summit Financials",
+    "address": "100 Capital Towers",
+    "phone": "(555) 011-8877",
+    "website": "https://summitfinancial.example.com",
+    "image": "summit-finance.png",
+    "membershipLevel": 1,
+    "tagline": "Accounting and wealth management strategies."
+  },
+  {
+    "name": "Starlight Marketing",
+    "address": "321 Creative Studio Circle",
+    "phone": "(555) 016-6655",
+    "website": "https://starlightmarketing.example.com",
+    "image": "starlight-marketing.png",
+    "membershipLevel": 3,
+    "tagline": "Illuminating your brand's digital footprint."
+  }
+]

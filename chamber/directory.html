@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Directory | Community Chamber of Commerce</title>
+    <meta name="description" content="Explore local businesses, corporate partners, and services in our community Chamber of Commerce directory.">
+    <meta name="author" content="Josiah Ryan Ofosuhene">
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Community Chamber of Commerce Business Directory">
+    <meta property="og:description" content="Connect with trusted local businesses and organizations supporting our community growth.">
+    <meta property="og:image" content="https://github.com/josiahofosuhene/wdd231/raw/main/chamber/images/og-share.jpg">
+    <meta property="og:url" content="https://josiahofosuhene.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css" media="min-width: 640px">
+    
+    <script defer src="js/directory.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder">[Icon]</div>
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="directory-title-bar">
+            <h2>Business Directory</h2>
+            <div class="view-controls">
+                <button id="view-grid" class="active-view" aria-label="Display as Card Grid">Grid View</button>
+                <button id="view-list" aria-label="Display as List">List View</button>
+            </div>
+        </div>
+
+        <div id="directory-display" class="grid-layout"></div>
+    </main>
+
+    <footer>
+        <div class="footer-branding">
+            <p><strong>Chamber of Commerce HQ</strong></p>
+            <p>101 Dadeban Street, Park Avenue</p>
+            <p>contact@chamberdomain.org +233 595620692</p>
+        </div>
+        <div class="footer-compliance">
+            <p>&copy; <span id="year-target"></span> | Josiah Ryan Ofosuhene | Ghana | WDD 231</p>
+            <p class="modification-line">Last Modified: <span id="mod-target"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
