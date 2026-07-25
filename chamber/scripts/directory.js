@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuToggle = document.getElementById("menu-toggle");
     const primaryNav = document.getElementById("primary-nav");
 
-    menuToggle.addEventListener("click", () => {
-        primaryNav.classList.toggle("nav-open");
-        menuToggle.classList.toggle("nav-active");
-    });
+    if (menuToggle && primaryNav) {
+        menuToggle.addEventListener("click", () => {
+            primaryNav.classList.toggle("nav-open");
+            menuToggle.classList.toggle("nav-active");
+        });
+    }
 
     const displayGrid = document.getElementById("directory-display");
     const dataSource = "data/members.json";
@@ -17,15 +19,20 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const response = await fetch(dataSource);
             if (!response.ok) throw new Error("HTTP error parsing dataset response.");
-            const membersList = await response.json();
+            const data = await response.json();
+            
+            const membersList = data.members || data;
             renderDirectoryCards(membersList);
         } catch (error) {
             console.error("Critical error processing business entries:", error);
-            displayGrid.innerHTML = `<p class="error-msg">Failed to load business directory data entries.</p>`;
+            if (displayGrid) {
+                displayGrid.innerHTML = `<p class="error-msg">Failed to load business directory data entries.</p>`;
+            }
         }
     }
 
     function renderDirectoryCards(members) {
+        if (!displayGrid) return;
         displayGrid.innerHTML = "";
         
         members.forEach(business => {
@@ -36,15 +43,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
             section.innerHTML = `
                 <div class="image-wrapper">
-                    <div class="img-mock">[ ${business.image} ]</div>
+                    <img src="images/${business.image}" alt="${business.name} logo" loading="lazy">
                 </div>
                 <h3>${business.name}</h3>
-                <p class="motto"><em>"${business.tagline}"</em></p>
+                <p class="motto"><em>"${business.tagline || ''}"</em></p>
                 <hr>
                 <div class="contact-details">
                     <p class="street-address">${business.address}</p>
                     <p class="phone-number">${business.phone}</p>
-                    <p class="web-link"><a href="${business.website}" target="_blank" rel="noopener">Visit Space</a></p>
+                    <p class="web-link"><a href="${business.website}" target="_blank" rel="noopener">Visit Site</a></p>
                 </div>
                 <span class="tier-tag tier-${business.membershipLevel}">${classificationText}</span>
             `;
@@ -55,17 +62,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const gridBtn = document.getElementById("view-grid");
     const listBtn = document.getElementById("view-list");
 
-    gridBtn.addEventListener("click", () => {
-        displayGrid.className = "grid-layout";
-        gridBtn.classList.add("active-view");
-        listBtn.classList.remove("active-view");
-    });
+    if (gridBtn && listBtn) {
+        gridBtn.addEventListener("click", () => {
+            displayGrid.className = "grid-layout";
+            gridBtn.classList.add("active-view");
+            listBtn.classList.remove("active-view");
+        });
 
-    listBtn.addEventListener("click", () => {
-        displayGrid.className = "list-layout";
-        listBtn.classList.add("active-view");
-        gridBtn.classList.remove("active-view");
-    });
+        listBtn.addEventListener("click", () => {
+            displayGrid.className = "list-layout";
+            listBtn.classList.add("active-view");
+            gridBtn.classList.remove("active-view");
+        });
+    }
 
     fetchChamberMembers();
 });

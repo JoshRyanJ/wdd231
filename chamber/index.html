@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Chamber of Commerce home page highlighting local businesses, weather, and upcoming events.">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 640px)">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo">I will insert Icon here</div>
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <nav id="primary-nav">
+            <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-grid">
+        <section class="hero">
+            <img src="images/hero-large.jpg" alt="Chamber of Commerce Community Banner" loading="eager">
+            <div class="cta-box">
+                <h2>Empower Your Local Business</h2>
+                <p>Join our network of thriving professionals today.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="card events">
+            <h3>Upcoming Events</h3>
+            <ul>
+                <li><strong>Annual Business Expo:</strong> Nov 15 @ 10:00 AM</li>
+                <li><strong>Networking Mixer:</strong> Dec 2 @ 6:00 PM</li>
+            </ul>
+        </section>
+
+        <section class="card weather">
+            <h3>Local Weather</h3>
+            <div id="current-weather">
+                <p>Loading current weather...</p>
+            </div>
+            <h4>3-Day Forecast</h4>
+            <div id="forecast" class="forecast-container">
+            </div>
+        </section>
+
+        <section class="spotlights-container">
+            <h3>Business Spotlights</h3>
+            <div id="spotlight-cards" class="spotlight-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>Chamber of Commerce HQ</strong></p>
+            <p>101 Dadeban Street, Park Avenue</p>
+            <p>contact@chamberdomain.org | +233 595620692</p>
+        </div>
+        <div>
+            <p>&copy;<span id="year-target"></span> | Josiah Ryan Ofosuhene | Ghana | WDD 231</p>
+            <p>Last Modified: <span id="mod-target"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
