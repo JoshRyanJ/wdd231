@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | Community Chamber of Commerce</title>
+    <meta name="description" content="Apply to join the Community Chamber of Commerce and connect with local businesses.">
+    <meta name="author" content="Josiah Ryan Ofosuhene">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Join the Community Chamber of Commerce">
+    <meta property="og:description" content="Apply for chamber membership and grow your business with local support and connections.">
+    <meta property="og:image" content="https://github.com/josiahofosuhene/wdd231/raw/main/chamber/images/og-share.jpg">
+    <meta property="og:url" content="https://josiahofosuhene.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="min-width: 640px">
+
+    <script defer src="scripts/join.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder">[Icon]</div>
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-grid">
+        <section class="join-form-section card">
+            <h2>Membership Application</h2>
+            <form action="thankyou.html" method="get">
+
+                <label for="fname">First Name
+                    <input type="text" id="fname" name="fname" title="Your first name" required autocomplete="given-name" placeholder="Ama">
+                </label>
+
+                <label for="lname">Last Name
+                    <input type="text" id="lname" name="lname" title="Your last name" required autocomplete="family-name" placeholder="Larbi">
+                </label>
+
+                <label for="orgtitle">Organizational Title
+                    <input type="text" id="orgtitle" name="orgtitle" title="Your title within your organization (letters, spaces, hyphens; min 7 characters)" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="Marketing Director">
+                </label>
+
+                <label for="email">Email Address
+                    <input type="email" id="email" name="email" title="Your email address" required autocomplete="email" placeholder="amalarbi123@gmail.com">
+                </label>
+
+                <label for="phone">Mobile Phone
+                    <input type="tel" id="phone" name="phone" title="Your mobile phone number" required autocomplete="tel">
+                </label>
+
+                <label for="orgname">Business/Organization Name
+                    <input type="text" id="orgname" name="orgname" title="Name of your business or organization" required autocomplete="organization">
+                </label>
+
+                <label for="level">Membership Level
+                    <select id="level" name="level" title="Select a membership level" autocomplete="off" required>
+                        <option value="" disabled selected>Select a level</option>
+                        <option value="np">NP Membership (Non-Profit, Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label for="description">Business/Organization Description
+                    <textarea id="description" name="description" title="Briefly describe your business or organization" autocomplete="off" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp" title="Form submission timestamp" autocomplete="off">
+
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <article class="card level-card" style="--delay: 0">
+                <h3>NP Membership</h3>
+                <p>For qualifying non-profit organizations. No membership fee.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-np">Learn More</button>
+            </article>
+
+            <article class="card level-card" style="--delay: 1">
+                <h3>Bronze Membership</h3>
+                <p>Entry-level membership for growing businesses.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-bronze">Learn More</button>
+            </article>
+
+            <article class="card level-card" style="--delay: 2">
+                <h3>Silver Membership</h3>
+                <p>Expanded visibility and networking opportunities.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-silver">Learn More</button>
+            </article>
+
+            <article class="card level-card" style="--delay: 3">
+                <h3>Gold Membership</h3>
+                <p>Our top tier with maximum exposure and benefits.</p>
+                <button type="button" class="modal-trigger" data-modal="modal-gold">Learn More</button>
+            </article>
+        </section>
+
+        <dialog id="modal-np" class="benefits-modal">
+            <h3>NP Membership Benefits</h3>
+            <ul>
+                <li>Free listing in the business directory</li>
+                <li>Access to community networking events</li>
+                <li>Monthly chamber newsletter</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+
+        <dialog id="modal-bronze" class="benefits-modal">
+            <h3>Bronze Membership Benefits</h3>
+            <ul>
+                <li>Standard directory listing with logo</li>
+                <li>Access to networking events</li>
+                <li>One discounted event ticket per quarter</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+
+        <dialog id="modal-silver" class="benefits-modal">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>Enhanced directory listing with photos</li>
+                <li>Discounted rates on chamber training events</li>
+                <li>Quarterly spotlight feature eligibility</li>
+                <li>Two discounted event tickets per quarter</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+
+        <dialog id="modal-gold" class="benefits-modal">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>Premium directory listing, top placement</li>
+                <li>Guaranteed homepage spotlight rotation</li>
+                <li>Free admission to all chamber events</li>
+                <li>Priority advertising placement</li>
+                <li>Dedicated account support</li>
+            </ul>
+            <button type="button" class="modal-close">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-branding">
+            <p><strong>Chamber of Commerce HQ</strong></p>
+            <p>101 Dadeban Street, Park Avenue</p>
+            <p>contact@chamberdomain.org +233 595620692</p>
+        </div>
+        <div class="footer-compliance">
+            <p>&copy; <span id="year-target"></span> | Josiah Ryan Ofosuhene | Ghana | WDD 231</p>
+            <p class="modification-line">Last Modified: <span id="mod-target"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

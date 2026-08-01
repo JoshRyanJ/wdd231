@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!response.ok) throw new Error("HTTP error parsing dataset response.");
             const data = await response.json();
             
+
             const membersList = data.members || data;
             renderDirectoryCards(membersList);
         } catch (error) {

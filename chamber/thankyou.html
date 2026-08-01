@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Community Chamber of Commerce</title>
+    <meta name="description" content="Thank you for applying to join the Community Chamber of Commerce.">
+    <meta name="author" content="Josiah Ryan Ofosuhene">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="min-width: 640px">
+
+    <script defer src="scripts/thankyou.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder">[Icon]</div>
+            <h1>Chamber of Commerce</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <section class="card thankyou-card">
+            <h2>Thank You for Applying!</h2>
+            <p>We've received your membership application. A chamber representative will be in touch soon.</p>
+
+            <dl class="submission-summary">
+                <dt>First Name:</dt>
+                <dd id="out-fname"></dd>
+
+                <dt>Last Name:</dt>
+                <dd id="out-lname"></dd>
+
+                <dt>Email:</dt>
+                <dd id="out-email"></dd>
+
+                <dt>Mobile Phone:</dt>
+                <dd id="out-phone"></dd>
+
+                <dt>Business/Organization Name:</dt>
+                <dd id="out-orgname"></dd>
+
+                <dt>Submitted:</dt>
+                <dd id="out-timestamp"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-branding">
+            <p><strong>Chamber of Commerce HQ</strong></p>
+            <p>101 Dadeban Street, Park Avenue</p>
+            <p>contact@chamberdomain.org +233 595620692</p>
+        </div>
+        <div class="footer-compliance">
+            <p>&copy; <span id="year-target"></span> | Josiah Ryan Ofosuhene | Ghana | WDD 231</p>
+            <p class="modification-line">Last Modified: <span id="mod-target"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

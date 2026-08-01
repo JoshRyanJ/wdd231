@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (menuToggle && primaryNav) {
         menuToggle.addEventListener("click", () => {
-            primaryNav.classList.toggle("open");
+            primaryNav.classList.toggle("nav-open");
         });
     }
 

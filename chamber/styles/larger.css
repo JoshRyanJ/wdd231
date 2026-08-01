@@ -1,15 +1,21 @@
 header {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1rem 2rem;
 }
 
+header h1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
 #menu-toggle {
-    display: none; 
+    display: none;
 }
 
 nav ul {
-    display: flex !important; 
+    display: flex !important;
     flex-direction: row;
     gap: 1rem;
 }
@@ -66,4 +72,11 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
+}
+
+main.join-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    gap: 2rem;
 }
