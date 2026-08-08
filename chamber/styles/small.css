@@ -373,3 +373,115 @@ main.thankyou-main {
     margin-left: 0;
     margin-bottom: 0.25rem;
 }
+
+
+.visit-banner {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-weight: bold;
+}
+
+main.discover-main {
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.discover-heading {
+    color: var(--primary-color);
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8";
+    gap: 1rem;
+}
+
+.discover-card {
+    background-color: var(--card-bg);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.discover-card h2 {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.discover-card .discover-more {
+    align-self: flex-start;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.discover-card .discover-more:hover {
+    background-color: var(--primary-color);
+}
+
+.discover-item-1 { grid-area: item1; }
+.discover-item-2 { grid-area: item2; }
+.discover-item-3 { grid-area: item3; }
+.discover-item-4 { grid-area: item4; }
+.discover-item-5 { grid-area: item5; }
+.discover-item-6 { grid-area: item6; }
+.discover-item-7 { grid-area: item7; }
+.discover-item-8 { grid-area: item8; }
+
+#discover-modal figure img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.75rem;
+}
+
+#discover-modal address {
+    font-style: normal;
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
