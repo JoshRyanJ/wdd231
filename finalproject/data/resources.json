@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "ERIC (Education Resources Information Center)",
+        "category": "Database",
+        "region": "North America",
+        "accessType": "Open Access",
+        "description": "A U.S. Department of Education-sponsored database of education literature, including thousands of EdTech-related research articles and reports.",
+        "url": "https://eric.ed.gov"
+    },
+    {
+        "id": 2,
+        "name": "EDUCAUSE",
+        "category": "Organization",
+        "region": "North America",
+        "accessType": "Membership",
+        "description": "A nonprofit association focused on advancing higher education through the use of information technology, publishing research and hosting conferences.",
+        "url": "https://www.educause.edu"
+    },
+    {
+        "id": 3,
+        "name": "UNESCO Institute for Information Technologies in Education (IITE)",
+        "category": "Organization",
+        "region": "Global",
+        "accessType": "Open Access",
+        "description": "UNESCO's dedicated institute researching how ICT can be applied to education policy and practice worldwide.",
+        "url": "https://iite.unesco.org"
+    },
+    {
+        "id": 4,
+        "name": "JISC",
+        "category": "Organization",
+        "region": "Europe",
+        "accessType": "Free",
+        "description": "A UK-based organization providing digital research and educational technology guidance to universities and colleges.",
+        "url": "https://www.jisc.ac.uk"
+    },
+    {
+        "id": 5,
+        "name": "British Journal of Educational Technology (BJET)",
+        "category": "Journal",
+        "region": "Europe",
+        "accessType": "Subscription",
+        "description": "A leading peer-reviewed journal covering the design, development, and evaluation of educational technology.",
+        "url": "https://bera-journals.onlinelibrary.wiley.com/journal/14678535"
+    },
+    {
+        "id": 6,
+        "name": "Computers & Education",
+        "category": "Journal",
+        "region": "Global",
+        "accessType": "Subscription",
+        "description": "An Elsevier-published journal focused on the effective use of computer technology in education across all levels.",
+        "url": "https://www.sciencedirect.com/journal/computers-and-education"
+    },
+    {
+        "id": 7,
+        "name": "Educational Technology & Society",
+        "category": "Journal",
+        "region": "Global",
+        "accessType": "Open Access",
+        "description": "A quarterly open-access journal publishing research on the pedagogical use of technology to support learning.",
+        "url": "https://www.j-ets.net"
+    },
+    {
+        "id": 8,
+        "name": "EdTech Hub",
+        "category": "Organization",
+        "region": "Global",
+        "accessType": "Open Access",
+        "description": "A global research partnership focused on generating evidence about educational technology's role in improving learning, especially in low-income countries.",
+        "url": "https://edtechhub.org"
+    },
+    {
+        "id": 9,
+        "name": "OECD Education GPS",
+        "category": "Database",
+        "region": "Global",
+        "accessType": "Free",
+        "description": "The OECD's data platform comparing education systems and policies across member countries, including technology adoption trends.",
+        "url": "https://gpseducation.oecd.org"
+    },
+    {
+        "id": 10,
+        "name": "Google Scholar",
+        "category": "Database",
+        "region": "Global",
+        "accessType": "Free",
+        "description": "A widely used academic search engine indexing scholarly literature across disciplines, including educational technology research.",
+        "url": "https://scholar.google.com"
+    },
+    {
+        "id": 11,
+        "name": "ResearchGate",
+        "category": "Database",
+        "region": "Global",
+        "accessType": "Free",
+        "description": "A social networking platform for researchers to share papers, ask questions, and find collaborators, including EdTech-focused work.",
+        "url": "https://www.researchgate.net"
+    },
+    {
+        "id": 12,
+        "name": "ASCILITE",
+        "category": "Organization",
+        "region": "Oceania",
+        "accessType": "Membership",
+        "description": "The Australasian Society for Computers in Learning in Tertiary Education, supporting research and professional practice in learning technology.",
+        "url": "https://ascilite.org"
+    },
+    {
+        "id": 13,
+        "name": "EdMedia + Innovate Learning Conference",
+        "category": "Conference",
+        "region": "Global",
+        "accessType": "Membership",
+        "description": "An annual international conference on educational multimedia, hypermedia, and telecommunications.",
+        "url": "https://www.aace.org/conf/edmedia"
+    },
+    {
+        "id": 14,
+        "name": "SITE (Society for Information Technology & Teacher Education)",
+        "category": "Conference",
+        "region": "North America",
+        "accessType": "Membership",
+        "description": "An international association and annual conference focused on technology in teacher education and professional development.",
+        "url": "https://site.aace.org"
+    },
+    {
+        "id": 15,
+        "name": "African Journal of Educational Studies in Mathematics and Sciences",
+        "category": "Journal",
+        "region": "Africa",
+        "accessType": "Open Access",
+        "description": "A peer-reviewed journal publishing STEM and technology-in-education research from and about the African context.",
+        "url": "https://www.ajol.info"
+    },
+    {
+        "id": 16,
+        "name": "SpringerOpen Education Collection",
+        "category": "Journal",
+        "region": "Global",
+        "accessType": "Open Access",
+        "description": "A collection of fully open-access Springer journals covering educational research, technology, and pedagogy.",
+        "url": "https://www.springeropen.com/journals?query=education"
+    }
+]

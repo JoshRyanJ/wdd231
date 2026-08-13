@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | EduScope</title>
+    <meta name="description" content="Thank you for suggesting a resource for the EduScope directory.">
+    <meta name="author" content="Josiah Ryan Ofosuhene">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="min-width: 640px">
+
+    <script type="module" src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder">ES</div>
+            <h1>EduScope</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="thankyou-main">
+        <section class="card thankyou-card">
+            <h2>Thanks for the Suggestion!</h2>
+            <p>We've received your submission and will review it for inclusion in the directory.</p>
+
+            <dl class="submission-summary">
+                <dt>Name:</dt>
+                <dd id="out-name"></dd>
+
+                <dt>Email:</dt>
+                <dd id="out-email"></dd>
+
+                <dt>Resource Name:</dt>
+                <dd id="out-resourceName"></dd>
+
+                <dt>Resource URL:</dt>
+                <dd id="out-resourceUrl"></dd>
+
+                <dt>Category:</dt>
+                <dd id="out-category"></dd>
+
+                <dt>Notes:</dt>
+                <dd id="out-message"></dd>
+
+                <dt>Submitted:</dt>
+                <dd id="out-timestamp"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year-target"></span> EduScope | Josiah Ryan Ofosuhene | Last Modified: <span id="mod-target"></span></p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#" target="_blank" rel="noopener">Project Video Walkthrough</a></p>
+    </footer>
+</body>
+</html>

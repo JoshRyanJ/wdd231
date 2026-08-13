@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Directory | EduScope</title>
+    <meta name="description" content="Browse a filterable, global directory of EdTech research journals, databases, organizations, and conferences.">
+    <meta name="author" content="Josiah Ryan Ofosuhene">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="EduScope Resource Directory">
+    <meta property="og:description" content="A filterable, bookmarkable directory of global EdTech research resources.">
+    <meta property="og:image" content="images/og-share.jpg">
+    <meta property="og:url" content="https://joshryanJ.github.io/wdd231/final/resources.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="min-width: 640px">
+
+    <script type="module" src="scripts/resources.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder">ES</div>
+            <h1>EduScope</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="resources-main">
+        <h2>Global EdTech Research Directory</h2>
+        <p class="resources-intro">Filter by category, or show only the resources you've bookmarked.</p>
+
+        <div class="filter-bar" role="group" aria-label="Filter resources by category">
+            <button type="button" class="filter-btn active" data-filter="all">All</button>
+            <button type="button" class="filter-btn" data-filter="Journal">Journals</button>
+            <button type="button" class="filter-btn" data-filter="Database">Databases</button>
+            <button type="button" class="filter-btn" data-filter="Organization">Organizations</button>
+            <button type="button" class="filter-btn" data-filter="Conference">Conferences</button>
+            <button type="button" id="bookmark-filter" class="filter-btn bookmark-filter-btn">&#9733; Bookmarked</button>
+        </div>
+
+        <p id="results-count" class="results-count" aria-live="polite"></p>
+
+        <div id="resource-grid" class="resource-grid"></div>
+    </main>
+
+    <dialog id="resource-modal" class="resource-modal">
+        <h3 id="modal-name"></h3>
+        <p class="modal-meta">
+            <span id="modal-category"></span> &middot;
+            <span id="modal-region"></span> &middot;
+            <span id="modal-access"></span>
+        </p>
+        <p id="modal-description"></p>
+        <div class="modal-actions">
+            <a id="modal-link" href="#" target="_blank" rel="noopener" class="btn">Visit Resource</a>
+            <button type="button" id="modal-bookmark" class="btn btn-secondary">Bookmark</button>
+        </div>
+        <button type="button" class="modal-close">Close</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="year-target"></span> EduScope | Josiah Ryan Ofosuhene | Last Modified: <span id="mod-target"></span></p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#" target="_blank" rel="noopener">Project Video Walkthrough</a></p>
+    </footer>
+</body>
+</html>

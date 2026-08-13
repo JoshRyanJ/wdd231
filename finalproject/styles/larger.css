@@ -1,0 +1,48 @@
+header {
+    padding: 1rem 2rem;
+    flex-wrap: nowrap;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+nav {
+    width: auto;
+}
+
+nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-top: 0;
+    width: auto;
+}
+
+nav a {
+    padding: 0.6rem 1rem;
+}
+
+main {
+    padding: 2rem 1.5rem;
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    text-align: left;
+}
+
+.steps-grid {
+    flex-direction: row;
+}
+
+.step-card {
+    flex: 1;
+}
+
+.resource-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | EduScope</title>
+    <meta name="description" content="Learn about the EduScope project and suggest a resource for the global EdTech research directory.">
+    <meta name="author" content="Josiah Ryan Ofosuhene">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="About EduScope">
+    <meta property="og:description" content="Learn about the EduScope project and how to suggest a resource for the directory.">
+    <meta property="og:image" content="images/og-share.jpg">
+    <meta property="og:url" content="https://joshryanj.github.io/wdd231/final/about.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="min-width: 640px">
+
+    <script type="module" src="scripts/about.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo-placeholder">ES</div>
+            <h1>EduScope</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <section class="card about-section">
+            <h2>About EduScope</h2>
+            <p>EduScope started from a simple frustration: EdTech research is scattered across dozens of journals, institutions, and conference sites, with no single place to see them together. This directory brings the major global resources into one filterable, <em>"bookmarkable"</em> list, built for researchers, educators, and students working across regions and access levels.</p>
+            <p>This is an individual course project for WDD 231 at BYU-Idaho, built from scratch with HTML, CSS, and vanilla JavaScript</p>
+        </section>
+
+        <section class="card form-section">
+            <h2>Suggest a Resource</h2>
+            <p>Know a journal, database, organization, or conference that belongs in the directory? Let us know.</p>
+
+            <form action="thankyou.html" method="get">
+                <label for="name">Your Name
+                    <input type="text" id="name" name="name" title="Your full name" required autocomplete="name" placeholder="Josiah Ryan Yaw">
+                </label>
+
+                <label for="email">Your Email
+                    <input type="email" id="email" name="email" title="Your email address" required autocomplete="email" placeholder="josiahmail21@gmail.com">
+                </label>
+
+                <label for="resourceName">Resource Name
+                    <input type="text" id="resourceName" name="resourceName" title="The name of the resource you're suggesting" required autocomplete="off" placeholder="e.g. International Journal of EdTech">
+                </label>
+
+                <label for="resourceUrl">Resource URL
+                    <input type="url" id="resourceUrl" name="resourceUrl" title="A link to the resource" required autocomplete="url" placeholder="https://example.com">
+                </label>
+
+                <label for="category">Category
+                    <select id="category" name="category" title="What type of resource is this?" autocomplete="off" required>
+                        <option value="" disabled selected>Select a category</option>
+                        <option value="Journal">Journal</option>
+                        <option value="Database">Database</option>
+                        <option value="Organization">Organization</option>
+                        <option value="Conference">Conference</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+
+                <label for="message">Why should it be included? (optional)
+                    <textarea id="message" name="message" title="Any additional context about this resource" autocomplete="off" rows="4"></textarea>
+                </label>
+
+                <input type="hidden" id="timestamp" name="timestamp" title="Form submission timestamp" autocomplete="off">
+
+                <input type="submit" value="Submit Suggestion">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year-target"></span> EduScope | Josiah Ryan Ofosuhene | Last Modified: <span id="mod-target"></span></p>
+        <p><a href="attributions.html">Attributions</a> | <a href="#" target="_blank" rel="noopener">Project Video Walkthrough</a></p>
+    </footer>
+</body>
+</html>
