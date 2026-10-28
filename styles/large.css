@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+    #menu {
+        display: none;
+    }
+
+    .main-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .course-card-container {
+        grid-column: span 2;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+        background-color: var(--secondary-color);
+    }
+
+    .navigation li {
+        flex: 1;
+        max-width: 150px;
+    }
+}
