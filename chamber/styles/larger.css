@@ -1,3 +1,4 @@
+@media (min-width: 640px) {
 header {
     flex-direction: row;
     justify-content: space-between;
@@ -98,6 +99,7 @@ main.join-grid {
 .discover-card img:hover {
     transform: scale(1.05);
     filter: brightness(1.1);
+}
 }
 
 @media (min-width: 1025px) {
