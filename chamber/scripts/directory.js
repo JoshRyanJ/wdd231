@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="image-wrapper">
                     <img src="images/${business.image}" alt="${business.name} logo" loading="lazy">
                 </div>
-                <h3>${business.name}</h3>
+                <h2>${business.name}</h2>
                 <p class="motto"><em>"${business.tagline || ''}"</em></p>
                 <hr>
                 <div class="contact-details">
