@@ -1,0 +1,131 @@
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+nav ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+nav a {
+    border-radius: 4px;
+}
+
+main.home-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "hero       hero"
+        "events     weather"
+        "spotlights spotlights";
+    gap: 1.5rem;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.cta-box {
+    left: auto;
+    right: 2rem;
+    bottom: 2rem;
+    max-width: 320px;
+    text-align: left;
+}
+
+.events {
+    grid-area: events;
+}
+
+.weather {
+    grid-area: weather;
+}
+
+.spotlights-container {
+    grid-area: spotlights;
+}
+
+.spotlight-grid {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.spotlight-card {
+    flex: 1;
+}
+
+footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+main.join-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+    gap: 2rem;
+}
+
+.discover-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "item1 item1"
+        "item2 item3"
+        "item4 item5"
+        "item6 item7"
+        "item8 item8";
+}
+
+.discover-card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.discover-card img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+@media (min-width: 1025px) {
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "item1 item1 item2 item3"
+            "item1 item1 item4 item5"
+            "item6 item7 item8 item8";
+    }
+
+    .discover-item-1 img {
+        height: 100%;
+        min-height: 300px;
+    }
+
+    .discover-item-1 {
+        display: grid;
+        grid-template-rows: auto 1fr auto auto;
+    }
+}
+
+.directory-title-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-layout {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+}
