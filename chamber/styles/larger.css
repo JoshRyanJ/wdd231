@@ -6,7 +6,7 @@ header {
     padding: 1rem 2rem;
 }
 
-header h1 {
+.site-name {
     font-size: 1.5rem;
     white-space: nowrap;
 }

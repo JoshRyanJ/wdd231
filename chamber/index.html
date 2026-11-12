@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Chamber of Commerce home page highlighting local businesses, weather, and upcoming events.">
+    <meta name="author" content="Josiah Ryan Ofosuhene">
+    <meta property="og:title" content="Chamber of Commerce | Home">
+    <meta property="og:description" content="Join our network of thriving local businesse, check  the weather and see upcoming chamber events. ">
+    <meta property="og:image" content="https://joshryanj.github.io/wdd231/chamber/images/og-share.jpg">
+   <meta property="og:url" content="https://joshryanj.github.io/wdd231/chamber/index.html">
+   <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/logo.jpg" type="images/logo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+            
+    <div class="logo-container">
+    <img src="images/logo.jpg" alt="Chamber of Commerce logo" width="48" height="48">
+            <button id="menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+            <nav id="primary-nav"></nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="home-grid">
+        <p class="site-name">Chamber of Commerce</p>
+        <section class="hero">
+            <img src="images/hero-large.jpg" alt="Chamber of Commerce Community Banner" width=  "1200" height="600" ="eager">
+            <div class="cta-box">
+                <h2>Empower Your Local Business</h2>
+                <p>Join our network of thriving professionals today.</p>
+                <a href="join.html" class="cta-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="card events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><strong>Annual Business Expo:</strong> Nov 15 @ 10:00 AM</li>
+                <li><strong>Networking Mixer:</strong> Dec 2 @ 6:00 PM</li>
+            </ul>
+        </section>
+
+        <section class="card weather">
+            <h2>Local Weather</h2>
+            <div id="current-weather">
+                <p>Loading current weather...</p>
+            </div>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast" class="forecast-container">
+            </div>
+        </section>
+
+        <section class="spotlights-container">
+            <h2>Business Spotlights</h2>
+            <div id="spotlight-cards" class="spotlight-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p><strong>Chamber of Commerce HQ</strong></p>
+            <p>101 Dadeban Street, Park Avenue</p>
+            <p>contact@chamberdomain.org | +233 595620692</p>
+        </div>
+        <div>
+            <p>&copy; <span id="year-target"></span> | Josiah Ryan Ofosuhene | Ghana | WDD 231</p>
+            <p>Last Modified: <span id="mod-target"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
