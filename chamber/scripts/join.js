@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("year-target").textContent = new Date().getFullYear();
-    document.getElementById("mod-target").textContent = document.lastModified;
+    document.getElementById("mod-target").textContent = new Date(document.lastModified).toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
 
     const menuToggle = document.getElementById("menu-toggle");
     const primaryNav = document.getElementById("primary-nav");
@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         menuToggle.addEventListener("click", () => {
             primaryNav.classList.toggle("nav-open");
             menuToggle.classList.toggle("nav-active");
+            menuToggle.setAttribute("aria-expanded", primaryNav.classList.contains("nav-open"));
         });
     }
 
