@@ -308,8 +308,12 @@ main.join-grid {
 .level-card {
     text-align: center;
     animation: cardFadeIn 0.6s ease backwards;
-    animation-delay: calc(var(--delay) * 0.15s);
 }
+
+.level-card:nth-of-type(1) { animation-delay: 0s; }
+.level-card:nth-of-type(2) { animation-delay: 0.15s; }
+.level-card:nth-of-type(3) { animation-delay: 0.3s; }
+.level-card:nth-of-type(4) { animation-delay: 0.45s; }
 
 @keyframes cardFadeIn {
     from { opacity: 0; transform: translateY(15px); }
